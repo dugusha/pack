@@ -1,4 +1,13 @@
 {
     "name": "gaoruishen/pack",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "grs",
+            "email": "dugusha0421@163.com"
+        }
+    ],
+    "minimum-stability": "dev",
     "require": {}
 }
