@@ -1,14 +1,21 @@
 {
-    "name": "gaoruishen/pack",
-    "description": "eam",
-    "type": "library",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "grs",
-            "email": "dugusha0421@163.com"
-        }
-    ],
-    "minimum-stability": "dev",
-    "require": {}
+  "name": "ZDZY/foundation",
+  "description": "正大正圆框架",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "grs",
+      "email": "dugusha0421@163.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "ZDZY\\": "src/"
+    }
+  }
 }
