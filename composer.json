@@ -1,5 +1,5 @@
 {
-  "name": "GRS/foundation",
+  "name": "grs/foundation",
   "description": "我的框架",
   "type": "library",
   "license": "MIT",
@@ -11,10 +11,8 @@
   ],
   "minimum-stability": "dev",
   "require": {
+    "yiisoft/yii2": "~2.0.0",
     "php": ">=7.0"
-  },
-  "require-dev": {
-    "yiisoft/yii2": "~2.0.0"
   },
   "autoload": {
     "psr-4": {
