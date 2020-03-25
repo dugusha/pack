@@ -1,6 +1,7 @@
 {
     "name": "gaoruishen/pack",
-    "type": "project",
+    "description": "eam",
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
