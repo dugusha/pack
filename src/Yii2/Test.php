@@ -6,7 +6,7 @@
  * Time: 2:47 PM
  */
 
-namespace ZDZY\Yii2;
+namespace GRS\Yii2;
 
 class Test
 {

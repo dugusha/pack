@@ -1,6 +1,6 @@
 {
-  "name": "ZDZY/foundation",
-  "description": "正大正圆框架",
+  "name": "GRS/foundation",
+  "description": "我的框架",
   "type": "library",
   "license": "MIT",
   "authors": [
@@ -15,7 +15,7 @@
   },
   "autoload": {
     "psr-4": {
-      "ZDZY\\": "src/"
+      "GRS\\": "src/"
     }
   }
 }
