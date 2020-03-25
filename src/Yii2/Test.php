@@ -12,6 +12,6 @@ class Test
 {
     public static function desc()
     {
-        echo "tttttt";
+        echo "tttttt1";
     }
 }
