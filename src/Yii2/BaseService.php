@@ -11,8 +11,7 @@ namespace GRS\Yii2;
 use Yii;
 use yii\base\Component;
 
-class BaseService extends Component
-{
+class BaseService extends Component{
     /**
      * 单例
      * @return static
