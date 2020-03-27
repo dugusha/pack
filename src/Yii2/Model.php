@@ -8,8 +8,9 @@
 
 namespace GRS\Yii2;
 
-
+use Yii;
 use yii\db\ActiveRecord;
+use yii\db\Exception;
 
 class Model extends ActiveRecord{
     public function __construct(array $config=[]) {
