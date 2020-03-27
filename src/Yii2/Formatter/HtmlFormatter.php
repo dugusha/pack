@@ -21,7 +21,6 @@ class HtmlFormatter extends HtmlResponseFormatter {
             } else {
                 $response->content = Json::encode(['code'=>0,'msg'=>'','data'=>$response->data]);
             }
-
         } else if (is_object($response->content)) {
             if (method_exists($response->content, '__toString')) {
                 $this->content = $response->content->__toString();
