@@ -9,12 +9,20 @@
 namespace GRS\Yii2;
 
 use yii\rest\Controller;
+use Yii;
 
 class ApiController extends Controller{
     /**
      * init
      */
     public function init() {
+        //引入user兼容yii2的整个拦截器系统
+        Yii::$app->set('user',function() {
+            $obj = new \stdClass();
+            $obj ->getIdentity = function() {
+                return 1;
+            };
+        });
         parent::init();
         $this->checkAccess();
     }
