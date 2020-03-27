@@ -50,7 +50,7 @@ class PageCtl extends Component{
             $this->dataKey => $data,
             $this->pageKey => $this->getPage(),
             $this->pageSizeKey => $this->getPageSize(),
-            $this->totalCountKey => $count,
+            $this->totalCountKey => (int)$count,
             $this->totalPageKey => floor (($count + $this->getPageSize() -1)/$this->getPageSize())
         ];
     }
