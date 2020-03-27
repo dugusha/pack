@@ -150,6 +150,17 @@ abstract class ApiAdapter extends Component {
         return $decode ? json_decode($result, true) : $result;
     }
 
+    /**
+     * 结果标准化
+     * @param $result
+     * @return mixed
+     */
+    protected function formatResult($result){
+        if (empty($result['code'])) return $result['data'];
+        $message = empty($result['msg']) ? "未知错误" : $result['msg'];
+        throw new UserException($message, $result['code']);
+    }
+
     //设置追踪id
     protected static function formatHeader(array $header)
     {
