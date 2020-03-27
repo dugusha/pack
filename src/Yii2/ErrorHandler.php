@@ -12,7 +12,6 @@ use Yii;
 use yii\base\UserException;
 use yii\web\Response;
 
-
 class ErrorHandler extends \yii\web\ErrorHandler
 {
     public function __construct(array $config = [])
