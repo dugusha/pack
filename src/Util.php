@@ -8,6 +8,8 @@
 
 namespace GRS;
 
+use yii\base\Exception;
+
 class Util
 {
     /**
