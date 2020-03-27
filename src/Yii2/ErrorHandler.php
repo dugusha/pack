@@ -9,6 +9,8 @@
 namespace GRS\Yii2;
 
 use Yii;
+use yii\base\UserException;
+use yii\web\Response;
 
 
 class ErrorHandler extends \yii\web\ErrorHandler
@@ -54,7 +56,7 @@ class ErrorHandler extends \yii\web\ErrorHandler
         }
         $response->format = Response::FORMAT_JSON;
         if(!defined('YII_DEBUG') && !($exception instanceof UserException)) {
-            $exception = new UserException('Unknown Error:未知错误','500',$exception);
+            $exception = new UserException(('Unknown Error:未知错误','500',$exception);
         }
         $error = $this->convertExceptionToArray($exception,false);
         $response->data = ['code'=>-1, 'error'=>$error,'data'=>(object)[]];
